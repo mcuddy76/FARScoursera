@@ -1,0 +1,17 @@
+Package: FARScoursera
+Title: Aids exploration and visualization of NHTSA  fatal accident data  
+Version: 0.0.0.9000
+Authors@R: person("MCuddy76",email="N/A",role=c("aut","cre"))
+Maintainer: person <person@courserafake>
+Description: Gives users the ability to load, summarize, and visualize data on fatal motor vehicle accidents at the state level between 2013-2015.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr,tidyr, readr, maps
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown

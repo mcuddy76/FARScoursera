@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# FARScoursera
+
+The goal of FARScoursera is to develop an R package using the US National Highway Traffic Safety Information Administration's Fatalitiy Analysis Reporting System (FARS) data. 
+
+## Installation
+
+You can install the released version of FARScoursera from github) with:
+
+``` {r eval=FALSE}
+devtools::install.github("mcuddy76/FARScoursera")
+```
+
+## Functions
+
+The FARScoursera packages allows users to load, summarize, and visualize the FARS data. 
+
+```{r eval=FALSE}
+fars_read()
+fars_summarize_years()
+fars_map_state()
+```
+

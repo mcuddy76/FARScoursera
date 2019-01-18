@@ -30,6 +30,7 @@
 #' @note To generate file name use: \code{\link{make_filename}}
 #' @seealso \link{make_filename}
 #' @export
+
 fars_read <- function(filename) {
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
@@ -59,7 +60,7 @@ make_filename <- function(year) {
   year <- as.integer(year)
   system.file("extdata",
               sprintf("accident_%d.csv.bz2", year),
-              package = "fars",
+              package = "FARScoursera",
               mustWork = TRUE)
 }
 

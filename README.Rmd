@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # FARScoursera
 
-The goal of FARScoursera is to develop an R package using the US National Highway Traffic Safety Information Administration's Fatalitiy Analysis Reporting System (FARS) data. 
+The goal of FARScoursera is to develop an R package for simple analysis the US National Highway Traffic Safety Information Administration's Fatalitiy Analysis Reporting System (FARS) data. 
 
 ## Installation
 
@@ -34,3 +34,5 @@ fars_summarize_years()
 fars_map_state()
 ```
 
+
+[![Travis build status](https://travis-ci.org/mcuddy76/FARScoursera.svg?branch=master)](https://travis-ci.org/mcuddy76/FARScoursera)

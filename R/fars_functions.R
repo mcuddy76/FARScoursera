@@ -71,7 +71,7 @@ make_filename <- function(year) {
 #'
 #' @importFrom dplyr mutate_
 #' @importFrom dplyr select_
-#' @importFrom magrittr "%>%"
+#' @importFrom dplyr "%>%"
 #
 #' @return A data.frame including entries in data by month, or NULL if the
 #'  \code{year} is not valid

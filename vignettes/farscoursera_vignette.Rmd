@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-library('FARScoursera')
+library('fars_functions')
 library('dplyr')
 library('tidyr')
 library('readr')
@@ -30,14 +30,14 @@ The package includes five functions to read the data, create a file, read the ye
 The first option to loade data is with the fars_read() function. This creates a tibble. 
 
 ```{r}
-fars_read(filename = filename)
+fars_read()
 ```
 
 ## Making the file name
-This creates a standard file name for the data. 
+This creates a standard file name for the data. This take the year as the only argument. 
 
 ```{r}
-make_filename(filename=year)
+make_filename()
 ```
 
 ## Reading the years
@@ -58,7 +58,7 @@ fars_summarize_years(c(2013:2015))
 This plots the frequency of accidents in the selected state(s) for a selected year. Users can select multiple states but only a single year. The maps are drawn using the map() function from the "maps" package. The function takes two arguments. First is the state number, a numeric code for each state. The full list of codes can be found in the function's documentation. The second argument is the year. 
 
 ```{r}
-fars_map_state(state.num=state.num, year=year)
+fars_map_state(state.num, year)
 ```
 
 

@@ -106,7 +106,7 @@ fars_read_years <- function(years) {
 #' @importFrom dplyr group_by_
 #' @importFrom dplyr summarize_
 #' @importFrom tidyr spread_
-#' @importFrom magrittr "%>%"
+#' @importFrom dplyr "%>%"
 #' @seealso \link{fars_read_years}
 #' @examples
 #' plot(fars_summarize_years(2015))
